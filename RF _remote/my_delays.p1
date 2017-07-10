@@ -1,0 +1,75 @@
+Version 3.2 HI-TECH Software Intermediate Code
+"14 D:\Frank\FRANK PROGRAMS\PIC\satya project pic controller\my_delays.c
+[v ___delay_ms `(i 0 ef ]
+"21 D:\Frank\FRANK PROGRAMS\PIC\satya project pic controller\my_delays.c
+[v ___delay_us `(i 0 ef ]
+[; ;my_delays.h: 10: void Delay_ms(unsigned int count);
+[; ;my_delays.h: 11: void Delay_us(unsigned int count);
+"11 D:\Frank\FRANK PROGRAMS\PIC\satya project pic controller\my_delays.c
+[v _Delay_ms `(v 1 ef1`ui ]
+{
+[; ;my_delays.c: 11: void Delay_ms(unsigned int count){
+[e :U _Delay_ms ]
+[v _count `ui 1 r1 ]
+[f ]
+"12
+[v _i `ui 1 a ]
+[; ;my_delays.c: 12: unsigned int i;
+[; ;my_delays.c: 13: for(i = 0; i < count; i++){
+"13
+{
+[e = _i -> -> 0 `i `ui ]
+[e $U 5  ]
+[e :U 2 ]
+{
+[; ;my_delays.c: 14: __delay_ms(1);
+"14
+[e ( ___delay_ms -> 1 `i ]
+"15
+}
+"13
+[e ++ _i -> -> 1 `i `ui ]
+[e :U 5 ]
+[e $ < _i _count 2  ]
+[e :U 3 ]
+"15
+}
+[; ;my_delays.c: 15: }
+[; ;my_delays.c: 16: }
+"16
+[e :UE 1 ]
+}
+"18
+[v _Delay_us `(v 1 ef1`ui ]
+{
+[; ;my_delays.c: 18: void Delay_us(unsigned int count){
+[e :U _Delay_us ]
+[v _count `ui 1 r1 ]
+[f ]
+"19
+[v _i `ui 1 a ]
+[; ;my_delays.c: 19: unsigned int i;
+[; ;my_delays.c: 20: for(i = 0; i < count; i++){
+"20
+{
+[e = _i -> -> 0 `i `ui ]
+[e $U 10  ]
+[e :U 7 ]
+{
+[; ;my_delays.c: 21: __delay_us(1);
+"21
+[e ( ___delay_us -> 1 `i ]
+"22
+}
+"20
+[e ++ _i -> -> 1 `i `ui ]
+[e :U 10 ]
+[e $ < _i _count 7  ]
+[e :U 8 ]
+"22
+}
+[; ;my_delays.c: 22: }
+[; ;my_delays.c: 23: }
+"23
+[e :UE 6 ]
+}
